@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="670" started-at="2020-07-31T06:31:10Z" finished-at="2020-07-31T06:31:11Z">
+  <suite name="Default suite" duration-ms="216167" started-at="2020-07-31T07:32:10Z" finished-at="2020-07-31T07:35:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="670" started-at="2020-07-31T06:31:10Z" finished-at="2020-07-31T06:31:11Z">
-      <class name="example.ExecuteSelectQuery">
-        <test-method status="PASS" signature="createConatct()[pri:0, instance:example.ExecuteSelectQuery@3532ec19]" name="createConatct" duration-ms="612" started-at="2020-07-31T06:31:10Z" finished-at="2020-07-31T06:31:11Z">
+    <test name="Default test" duration-ms="216167" started-at="2020-07-31T07:32:10Z" finished-at="2020-07-31T07:35:47Z">
+      <class name="com.autodeskcrm.orgtest.CreateOrganizationTest">
+        <test-method status="FAIL" signature="createORgtest()[pri:0, instance:com.autodeskcrm.orgtest.CreateOrganizationTest@77caeb3e]" name="createORgtest" duration-ms="215838" started-at="2020-07-31T07:32:10Z" finished-at="2020-07-31T07:35:46Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: customer
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'STUDENTAPP', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: customer
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'STUDENTAPP', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+at com.autodeskcrm.orgtest.CreateOrganizationTest.createORgtest(CreateOrganizationTest.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createConatct -->
-      </class> <!-- example.ExecuteSelectQuery -->
+        </test-method> <!-- createORgtest -->
+      </class> <!-- com.autodeskcrm.orgtest.CreateOrganizationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
