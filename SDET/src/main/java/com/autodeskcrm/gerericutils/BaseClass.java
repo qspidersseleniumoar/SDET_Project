@@ -12,10 +12,17 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 
+import com.autodestcrm.objectrepositorylib.Login;
+/**
+ * 
+ * @author Deepak
+ *
+ */
 public class BaseClass {
+	/**
+	 * libraries object creations
+	 */
    public DataBaseLib dbLib = new DataBaseLib();
    public ExcelLib excelLib = new ExcelLib();
    public FileLib fLib = new FileLib();
@@ -72,15 +79,14 @@ public class BaseClass {
 		driver.get(URL);
 		
 		/*step 2 : login*/
-		driver.findElement(By.name("user_name")).sendKeys(USERNAME);
-		driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
-		driver.findElement(By.id("submitButton")).click();
+	     Login lp = new Login(driver);
+	     lp.loginToApp(USERNAME, PASSWORD);
 		
 	}
 	
 	@AfterMethod
 	public void configAm() {
-		/*logout */
+
 		
 		/*step 1 : logout*/
 		WebElement wb = driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
