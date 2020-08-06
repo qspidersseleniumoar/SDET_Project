@@ -5,5 +5,9 @@ package com.autodestcrm.objectrepositorylib;
  *
  */
 public class Common {
+   public void  navigateSearch() {
+	   //step-1
+	   //step-2 
 
+   }
 }
