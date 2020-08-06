@@ -7,7 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * 
  * @author Deepak
+
  *          Vidhu
+
+ *          JeetDAs
+
  *
  */
 public class Contacts {
@@ -20,9 +24,19 @@ public class Contacts {
 	@FindBy(xpath="//img[@alt='Create Contact...']")
 	private WebElement creteContactImg;
 
+
 	@FindBy(xpath="//img[@alt='delete Contact...']")
 	private WebElement deleteImg;
 	
+
+	
+	@FindBy(xpath="//img[@alt='Saerch Coantact']")
+	private WebElement searchImg;
+	
+	
+	
+
+
 	public WebElement getcreteContactImg() {
 		return creteContactImg;
 	}
